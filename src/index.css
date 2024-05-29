@@ -9,7 +9,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: red;
+  background: url("./assets/background.png"),linear-gradient(0deg, #70F 0%, #002280 100%);
+  background-size: 200vh;
+  height: 100%;
+
 }
 
 code {
