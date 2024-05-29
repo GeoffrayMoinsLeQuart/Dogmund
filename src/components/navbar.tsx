@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import ButtonDisconnect from './connection/button-disconnect';
 import Button from './connection/button';
 import Logo from '../assets/logo.png';
 import Text from './connection/text';
@@ -14,11 +13,8 @@ const Navbar: React.FC = () => {
 		}
 	}, [isConnected]);
 
-	console.log("isMenuOpen", isMenuOpen);
-	console.log("isConnected", isConnected);
-
 	return (
-		<nav className='flex items-center justify-between bg-gray-800 p-4 max-w-[1140px] w-[100%] top-[52px] fixed'>
+		<nav className='flex items-center justify-between p-4 max-w-[1140px] w-[100%] pt-[52px] '>
 			<div className='flex items-center'>
 				<img src={Logo} alt='Logo' className={`h-[48px] w-[48px] `} />
 			</div>

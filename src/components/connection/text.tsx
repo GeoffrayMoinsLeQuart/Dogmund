@@ -19,19 +19,12 @@ const Text: React.FC<TextProps> = ({ children, onClick, isMenuOpen }) => {
 					setIsOpen(!isOpen);
 					isMenuOpen();
 				}}
-				className={`flex justify-between items-center cursor-pointer ${isOpen && 'mb-[20px]'}`}
+				className={`flex justify-between items-center cursor-pointer ${isOpen && 'mb-[20px]'} `}
 			>
 				<p
+				className='text-WHITE text-[20px] font-single max-sm:text-[16px]'
 					style={{
-						color: '#FFF',
-						textAlign: 'right',
 						textShadow: '0px 1.2px 2.4px rgba(0, 0, 0, 0.12), 0px 1.2px 3.6px rgba(0, 0, 0, 0.20)',
-						fontFamily: 'Single Day',
-						fontSize: '20px',
-						fontStyle: 'normal',
-						fontWeight: 400,
-						lineHeight: '120%' /* 24px */,
-						letterSpacing: '-0.2px',
 						marginRight: isOpen ? '6px' : '24px'
 					}}
 				>

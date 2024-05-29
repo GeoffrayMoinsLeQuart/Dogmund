@@ -13,19 +13,13 @@ const TextField = () => {
 
   return (
     <div
+    className='flex justify-center items-center p-4 max-sm:max-w-[262px] max-w-[464px] w-[100%] h-[48px]'
       style={{
         borderRadius: '12px',
         border: '1px solid rgba(255, 255, 255, 0.12)',
         background: 'rgba(255, 255, 255, 0.20)',
         boxShadow: '8px 8px 16px 0px rgba(0, 0, 0, 0.12), 0px 0px 8px 0px rgba(0, 0, 0, 0.04) inset',
         backdropFilter: 'blur(12px)',
-        display: 'flex',
-        width: '464px',
-        height: '48px',
-        padding: '16px',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'flex-start',
         flexShrink: 0,
         color: '#FFF',
         textShadow: '0px 1.2px 2.4px rgba(0, 0, 0, 0.12), 0px 1.2px 3.6px rgba(0, 0, 0, 0.20)',

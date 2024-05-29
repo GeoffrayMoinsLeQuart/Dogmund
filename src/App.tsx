@@ -1,21 +1,18 @@
-import React from 'react';
 import './App.css';
-import ButtonDisconnect from './components/connection/button-disconnect';
-import Button from './components/connection/button';
-import TextField from './components/text-field';
 import Navbar from './components/navbar';
+import Title from './components/title';
 
 function App() {
 	return (
-		<div className='App'>
-			<header className='App-header'>
-				<Navbar />
-			</header>
-			<body>
-				{/* <Button onClick={() => console.log('ButtonDisconnect clicked')}>sdkjfghsd</Button>
-				<ButtonDisconnect onClick={() => console.log('ButtonDisconnect clicked')} /> */}
-				{/* <TextField /> */}
-			</body>
+		<div className='flex justify-center items-center'>
+			<div className='xl:max-w-[1140px] max-sm:max-w-[90%] w-[100%]'>
+				<header className='App-header'>
+					<Navbar />
+				</header>
+				<body>
+					<Title />
+				</body>
+			</div>
 		</div>
 	);
 }

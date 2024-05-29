@@ -13,6 +13,10 @@ module.exports = {
 			GREEN: '#7BE5DB',
 			PURPLE: '#6E04F5'
 		},
+		fontFamily: {
+      single: ['"Single Day"', "sans-serif"],
+      custom2: ["Custom-2", "sans-serif"],
+    },
 		extend: {}
 	},
 	plugins: []

@@ -6,7 +6,7 @@ interface ButtonProps {
 	disabled?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({ onClick, children, disabled = false }) => {
+const ButtonClaim: React.FC<ButtonProps> = ({ onClick, children, disabled = false }) => {
 	const [isHover, setIsHover] = useState(false);
 
 	const styleButtonNormal = {
@@ -15,15 +15,15 @@ const Button: React.FC<ButtonProps> = ({ onClick, children, disabled = false }) 
 		fontWeight: 400,
 		lineHeight: '24px',
 		letterSpacing: '-0.2px',
-		color: '#2252D6',
-		width: '153px',
+		color: '#FFFFFF50',
+		width: '120px',
 		height: '48px',
 		padding: '8px 20px 8px 20px',
 		borderRadius: '40px 40px 40px 40px',
 		border: '1px',
-		backgroundColor: 'white',
+		backgroundColor: '##FFFFFF10',
 		boxShadow:
-			'8px 8px 16px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px 0px rgba(255, 255, 255, 0.12) inset, 0px -2px 4px 0px rgba(0, 0, 0, 0.12) inset'
+			'80px -2.4px 4.8px 0px rgba(0, 0, 0, 0.12) inset, 8px 8px 16px 0px rgba(0, 0, 0, 0.12)'
 	};
 
 	const styleButtonHover = {
@@ -32,13 +32,13 @@ const Button: React.FC<ButtonProps> = ({ onClick, children, disabled = false }) 
 		fontWeight: 400,
 		lineHeight: '24px',
 		letterSpacing: '-0.2px',
-		color: '#2252D6',
-		width: '153px',
+		color: '#FFFFFF50',
+		width: '120px',
 		height: '48px',
 		padding: '8px 20px 8px 20px',
 		borderRadius: '40px 40px 40px 40px',
 		border: '1px',
-		backgroundColor: 'white',
+		backgroundColor: '##FFFFFF10',
 		boxShadow:
 			'0px 0px 0px 3px rgba(255, 255, 255, 0.12), 8px 8px 16px 0px rgba(0, 0, 0, 0.12), 0px 0px 16px 0px rgba(255, 255, 255, 0.24), 0px 2px 4px 0px rgba(255, 255, 255, 0.12) inset, 0px -2px 4px 0px rgba(0, 0, 0, 0.12) inset'
 	};
@@ -51,7 +51,7 @@ const Button: React.FC<ButtonProps> = ({ onClick, children, disabled = false }) 
 		fontWeight: 400,
 		lineHeight: '24px',
 		letterSpacing: '-0.2px',
-		width: '153px',
+		width: '120px',
 		height: '48px',
 		padding: '8px 20px 8px 20px',
 		borderRadius: '40px 40px 40px 40px',
@@ -81,4 +81,4 @@ const Button: React.FC<ButtonProps> = ({ onClick, children, disabled = false }) 
 	);
 };
 
-export default Button;
+export default ButtonClaim;
