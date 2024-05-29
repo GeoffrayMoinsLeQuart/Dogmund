@@ -1,16 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import ButtonConnect from './components/button-connect';
-import Button from './components/button';
+import ButtonDisconnect from './components/connection/button-disconnect';
+import Button from './components/connection/button';
+import TextField from './components/text-field';
+import Navbar from './components/navbar';
 
 function App() {
 	return (
 		<div className='App'>
 			<header className='App-header'>
-				<Button onClick={() => console.log('ButtonConnect clicked')}>sdkjfghsd</Button>
-				<ButtonConnect onClick={() => console.log('ButtonConnect clicked')} />
+				<Navbar />
 			</header>
+			<body>
+				{/* <Button onClick={() => console.log('ButtonDisconnect clicked')}>sdkjfghsd</Button>
+				<ButtonDisconnect onClick={() => console.log('ButtonDisconnect clicked')} /> */}
+				{/* <TextField /> */}
+			</body>
 		</div>
 	);
 }

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ReactComponent as LogOut } from '../assets/logout.svg';
+import { ReactComponent as LogOut } from '../../assets/logout.svg';
 
 interface ButtonProps {
 	onClick: () => void;
@@ -45,7 +45,7 @@ const styleButtonHover = {
 		'0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 4px 16px 0px rgba(255, 255, 255, 0.08)'
 };
 
-const ButtonConnect: React.FC<ButtonProps> = ({ onClick }) => {
+const ButtonDisconnect: React.FC<ButtonProps> = ({ onClick }) => {
 	const [isHover, setIsHover] = useState(false);
 
 	const handleMouseEnter = () => {
@@ -69,4 +69,4 @@ const ButtonConnect: React.FC<ButtonProps> = ({ onClick }) => {
 	);
 };
 
-export default ButtonConnect;
+export default ButtonDisconnect;
