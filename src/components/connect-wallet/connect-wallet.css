@@ -1,6 +1,8 @@
 .customOverlay {
-  background: rgba(36, 123, 160, 0.7);
+  background: rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(4px);
 }
+
 .customModal {
   background: white;
   border-radius: 24px;
