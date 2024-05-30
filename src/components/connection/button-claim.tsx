@@ -22,8 +22,7 @@ const ButtonClaim: React.FC<ButtonProps> = ({ onClick, children, disabled = fals
 		borderRadius: '40px 40px 40px 40px',
 		border: '1px',
 		backgroundColor: '##FFFFFF10',
-		boxShadow:
-			'80px -2.4px 4.8px 0px rgba(0, 0, 0, 0.12) inset, 8px 8px 16px 0px rgba(0, 0, 0, 0.12)'
+		boxShadow: '80px -2.4px 4.8px 0px rgba(0, 0, 0, 0.12) inset, 8px 8px 16px 0px rgba(0, 0, 0, 0.12)'
 	};
 
 	const styleButtonHover = {
