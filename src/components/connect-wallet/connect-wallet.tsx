@@ -20,11 +20,19 @@ interface IConnectWallet {
 }
 
 const WalletButton: React.FC<WalletButtonProps> = ({ imgSrc, altText, walletName }) => {
+	const [isHover, setIsHover] = useState(false);
+
+	const handleMouseEnter = () => {
+		setIsHover(true);
+	};
+	const handleMouseLeave = () => {
+		setIsHover(false);
+	};
 	return (
-		<button className='WalletButton'>
+		<button className='WalletButton' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
 			<img src={imgSrc} alt={altText} className='w-6 h-6 mr-3' />
-			<p className='font-single mr-2  text-[18px]'>{walletName}</p>
-			<span className='ml-auto text-gray-500 font-single text-[16px]'>(Detected)</span>
+			<p className={`'text-[#3D3D3D] ${isHover && 'text-[#4778FF]'} font-single mr-2 text-[18px]`}>{walletName}</p>
+			<span className='text-[#C2C2C2] ml-auto text-gray-500 font-single text-[16px]'>(Detected)</span>
 		</button>
 	);
 };
@@ -54,14 +62,20 @@ const ConnectWallet: React.FC<IConnectWallet> = ({ isModalOpen, setModalOpen }) 
 				modal: 'customModal'
 			}}
 		>
-			<h2 className='text-xl font-single mb-4'>Connect Wallet</h2>
+			<div className='Title'>
+				<h2 className='text-[24px] font-single mb-4 text-center text-[#3D3D3D]'>Connect Wallet</h2>
+			</div>
 			<div className='space-y-3 WalletButtons'>
 				<WalletButton imgSrc={MetamaskLogo} altText='Metamask' walletName='Metamask' />
 				<WalletButton imgSrc={PhantomLogo} altText='Phantom' walletName='Phantom' />
 				<WalletButton imgSrc={BraveLogo} altText='Brave Wallet' walletName='Brave Wallet' />
 				<WalletButton imgSrc={CoinbaseLogo} altText='Coinbase' walletName='Coinbase' />
 			</div>
-			<button className='mt-4 text-gray-500 hover:underline font-single'>I don't have wallet</button>
+			<div className='NoWallet flex justify-center'>
+				<button className='text-[#A3A3A3] text-[16px] mt-4 text-gray-500 hover:underline font-single text-center'>
+					I don't have wallet
+				</button>
+			</div>
 		</Modal>
 	);
 };
