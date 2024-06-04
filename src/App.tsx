@@ -11,7 +11,7 @@ const App: React.FC = () => {
 	return (
 		<div className='relative flex justify-center items-center w-full !h-full !min-h-[100vh]'>
 			<div className='relative xl:max-w-[1140px] max-sm:max-w-[90%] w-[100%] flex flex-col items-center !min-h-[100vh]'>
-				<Background />
+				<Background comingFrom='home'/>
 				<Suspense fallback={<div>Loading...</div>}>
 					<Navbar onOpenModal={() => setIsOpenModal(!isOpenModal)} />
 					<Title />

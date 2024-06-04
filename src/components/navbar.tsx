@@ -19,7 +19,7 @@ const Navbar: React.FC<INavbar> = ({ onOpenModal }) => {
   }, [isConnected]);
 
   return (
-    <nav className='flex items-center justify-between p-4 max-w-[1140px] w-full pt-[52px]'>
+    <nav className='flex items-center justify-between p-4 max-w-[1140px] w-full pt-[32px]'>
       <div className='flex items-center'>
         <img src={Logo} alt='Logo' className='h-12 w-12' />
       </div>
