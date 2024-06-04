@@ -11,7 +11,7 @@ body {
 	/* background: url("./assets/background.png"),linear-gradient(0deg, #70F 0%, #002280 100%); */
 	min-height: 100vh;
 	position: relative;
-	height: 5000px;
+	height: 12000px;
 }
 
 #body-back {
@@ -31,26 +31,19 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	height: 10000px;
-	z-index: -2;  
-  background-size: 30px;
+	height: 12000px;
+	z-index: -2;
+	background-size: 30px;
 
-	background: url("./assets/background.png"), repeating-linear-gradient(
-		to bottom,
-		#002280 0px,
-		#70f 1000px,
-		#70f 2000px,
-		#002280 3200px
-	);
-  background-repeat: repeat;
-   background-size: 120%;
+	background: url('./assets/background.png'),
+		repeating-linear-gradient(to bottom, #002280 0px, #70f 1000px, #70f 2000px, #002280 3200px);
+	background-repeat: repeat;
+	background-size: 120%;
 }
 
 #root {
 	min-height: 100vh;
 }
-
-
 
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;

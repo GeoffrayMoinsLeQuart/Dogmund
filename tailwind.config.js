@@ -11,7 +11,8 @@ module.exports = {
 			YELLOW: '#FFFD96',
 			PINK: '#F4AAFF',
 			GREEN: '#7BE5DB',
-			PURPLE: '#6E04F5'
+			PURPLE: '#6E04F5',
+			PURPLE2: '#7000FF'
 		},
 		fontFamily: {
       single: ['"Single Day"', "sans-serif"],
