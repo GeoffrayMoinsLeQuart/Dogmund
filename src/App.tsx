@@ -16,7 +16,7 @@ const App: React.FC = () => {
 			<Page3 comingFrom='home' />
 			<Page4 />
 			<Page2 comingFrom='home' message="Diamonds aren't formed without pressure so give that scroll a solid push!" />
-			<Page3 comingFrom='home' />
+			<Page3 comingFrom='home'  />
 			<Page2 comingFrom='home' message='Keep your eyes on the prize, and your finger on the scroll!' />
 			<Page3 comingFrom='home' />
 			<Page2

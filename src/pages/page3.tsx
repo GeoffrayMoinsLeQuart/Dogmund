@@ -5,7 +5,8 @@ import {
 	CoinThreeLeftDesktop,
 	CoinTwoLeftDesktop,
 	CoinTwoRightDesktop,
-	PawnGifNormal
+	PawnGifNormal,
+	CoinFourLeftDesktop
 } from '../components/backgrounds/coins';
 import ScrollToSell from '../components/scroll-to-sell';
 
@@ -21,8 +22,9 @@ const Page3: React.FC<Page3Props> = ({ comingFrom }) => {
 			<div className='absolute w-full h-full -z-[1]'>
 				<CoinOneRightDesktop classname={`${visible} top-[0] left-[30%]`} />
 				<CoinThreeLeftDesktop classname={`${visible} top-[20%] left-[12%]`} />
+				<CoinFourLeftDesktop classname={`${visible} top-[40%] left-[5%] rotate-90	`} />
 				<CoinTwoLeftDesktop classname={`${visible} top-[65%] left-[17%]`} />
-				<CoinTwoRightDesktop classname={`${visible} top-[95%] left-[38%]`} />
+				<CoinTwoRightDesktop classname={`${visible} top-[90%] left-[38%]`} />
 				<PawnGifNormal classname={`${visible2} right-[0%]`} />
 				<ScrollToSell />
 			</div>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import useHover from '../hooks/useHover';
 import Button from './connection/button';
 import Logo from '../assets/logo.png';
 import Text from './connection/text';
