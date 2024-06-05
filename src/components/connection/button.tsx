@@ -4,9 +4,10 @@ interface ButtonProps {
 	onClick: () => void;
 	children: React.ReactNode;
 	disabled?: boolean;
+	classname?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ onClick, children, disabled = false }) => {
+const Button: React.FC<ButtonProps> = ({ onClick, children, disabled = false, classname }) => {
 	const [isHover, setIsHover] = useState(false);
 
 	const styleButtonNormal = {
@@ -69,7 +70,7 @@ const Button: React.FC<ButtonProps> = ({ onClick, children, disabled = false }) 
 
 	return (
 		<button
-			className='active:scale-105 active:shadow-lg active:bg-gray-300 active:text-gray-800 active:border-gray-400 active:ring-gray-400 active:ring-2 z-[4]'
+			className={`active:scale-105 active:shadow-lg active:bg-gray-300 active:text-gray-800 active:border-gray-400 active:ring-gray-400 active:ring-2 z-[4] ${classname}`}
 			disabled={disabled}
 			style={disabled ? styleButtonDisabled : isHover ? styleButtonHover : styleButtonNormal}
 			onClick={onClick}
