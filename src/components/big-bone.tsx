@@ -5,11 +5,11 @@ import Button from './connection/button';
 
 const BigBone: React.FC = () => {
 	return (
-		<div className='relative w-full h-full -z-[1]'>
+		<div className='relative w-full h-full'>
 			<img
 				src={BonePink}
 				alt='Dog Bone'
-				className={`relative top-[15%] max-h-[50vw] max-w-[550px] sm:top-[35%] sm:max-h-[35%] sm:max-w-[550px] h-full w-full`}
+				className={`top-[15%] max-h-[50vw] max-w-[550px] sm:top-[35%] sm:max-h-[35%] sm:max-w-[550px] h-full w-full`}
 			/>
 			<img
 				src={DogVicieux}

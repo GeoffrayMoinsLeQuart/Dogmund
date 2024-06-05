@@ -11,10 +11,10 @@ const Background12: React.FC<BackgroundProps> = ({ comingFrom }) => {
 
 	return (
 		<div className='absolute w-full h-full -z-[1]'>
-			<CoinOneRightMobile classname={`${visible} top-[5%] left-[5%]`} />
+			<CoinOneRightMobile classname={`${visible} top-[5%] right-[5%]`} />
 			<CoinTwoRightMobile classname={`${visible} top-[72%] -right-[10%]`} />
 			<CoinThreeRightMobile classname={`${visible} top-[140%] right-[5%]`} />
-			<CoinOneLeftMobile classname={`${visible} top-[5%] right-[5%]`} />
+			<CoinOneLeftMobile classname={`${visible} top-[5%] left-[5%]`} />
 			<CoinTwoLeftMobile classname={`${visible} top-[72%] -left-[10%]`} />
 			<CoinThreeLeftMobile classname={`${visible} top-[140%] left-[5%]`} />
 		</div>
