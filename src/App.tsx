@@ -8,12 +8,12 @@ import Page4 from './pages/page4';
 const App: React.FC = () => {
 	return (
 		<div className='relative flex flex-col justify-center items-center w-full !h-full !min-h-[100vh]'>
-			<Page1 />
+			{/* <Page1 />
 			<Page2
 				comingFrom='home'
 				message={['The journey to the end', 'is where the real gem awaits.', 'Are you up for the challenge?']}
 			/>
-			<Page3 comingFrom='home' />
+			<Page3 comingFrom='home' /> */}
 			<Page4 />
 			<Page2
 				comingFrom='home'
