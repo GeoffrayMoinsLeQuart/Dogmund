@@ -11,7 +11,7 @@ const Title: React.FC = () => {
 			<h2 className='text-center font-single text-YELLOW text-[32px] max-sm:text-[24px]'>
 				The first ever made meme rollapp on Dymension
 			</h2>
-			<div className='flex max-[350px]:flex-col justify-center items-center gap-8 max-sm:gap-1 '>
+			<div className='flex max-[420px]:flex-col max-sm:min-w-full max-sm:justify-evenly justify-center items-center gap-8 max-sm:gap-1 '>
 				<TextField />
 				<ButtonClaim onClick={() => console.log('call db Dym')}>Claim</ButtonClaim>
 			</div>
