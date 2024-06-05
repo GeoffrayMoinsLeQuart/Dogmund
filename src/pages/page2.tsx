@@ -14,7 +14,7 @@ import DogVicieux from '../assets/dog-vicieux.webp';
 
 type Page2Props = {
 	comingFrom: string;
-	message: string;
+	message: string[];
 };
 
 const Page2: React.FC<Page2Props> = ({ comingFrom, message }) => {

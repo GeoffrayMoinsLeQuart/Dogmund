@@ -11,22 +11,25 @@ const App: React.FC = () => {
 			<Page1 />
 			<Page2
 				comingFrom='home'
-				message='The journey to the end is where the real gem awaits. Are you up for the challenge?'
+				message={['The journey to the end', 'is where the real gem awaits.', 'Are you up for the challenge?']}
 			/>
 			<Page3 comingFrom='home' />
 			<Page4 />
-			<Page2 comingFrom='home' message="Diamonds aren't formed without pressure so give that scroll a solid push!" />
-			<Page3 comingFrom='home'  />
-			<Page2 comingFrom='home' message='Keep your eyes on the prize, and your finger on the scroll!' />
+			<Page2
+				comingFrom='home'
+				message={["Diamonds aren't formed without", 'pressure so give that scroll a', 'solid push!']}
+			/>
+			<Page3 comingFrom='home' />
+			<Page2 comingFrom='home' message={['Keep your eyes on the prize,', 'and your finger on the scroll!']} />
 			<Page3 comingFrom='home' />
 			<Page2
 				comingFrom='home'
-				message='Tired already? Well, buckle up! The best is still ahead, just a few more scrolls to go!'
+				message={['Tired already? Well, buckle up!', 'The best is still ahead,', 'just a few more scrolls to go!']}
 			/>
 			<Page3 comingFrom='home' />
-			<Page2 comingFrom='home' message="Don't blink! You might miss the hidden wonders waiting below!" />
+			<Page2 comingFrom='home' message={["Don't blink! You might miss", 'the hidden wonders waiting below!']} />
 			<Page3 comingFrom='home' />
-			<Page2 comingFrom='home' message='Will you really let it go?' />
+			<Page2 comingFrom='home' message={['Will you really let it go?']} />
 		</div>
 	);
 };

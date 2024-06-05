@@ -3,7 +3,7 @@ import BonePink from '../assets/bone-pink.webp';
 import BoneWhite from '../assets/bone-white.webp';
 
 type BoneProps = {
-	text: string;
+	text: string[];
 	imageDog: string;
 	colorBone: string;
 };
@@ -22,9 +22,23 @@ const Bone: React.FC<BoneProps> = ({ text, imageDog, colorBone }) => {
 				className={`absolute top-[29%] sm:top-[30%] max-h-[8vw] max-w-[10%] sm:max-h-[8vw] sm:max-w-[10%] h-full w-full`}
 			/>
 
-			<p className='absolute text-center top-[29%] sm:top-[40%] left-[8%] -rotate-[6deg] font-single text-PURPLE2 text-[26px] max-sm:text-[18px] max-w-[450px]'>
-				{text}
-			</p>
+			<div
+				className={`absolute max-sm:top-0 max-sm:left-0
+			 ${
+					text.length === 3 ? 'sm:top-[0%]' : text.length === 2 ? 'sm:top-[0%]' : 'sm:-top-[3%]'
+				} left-[10%] sm:left-[28%] sm:transform sm:-translate-x-1/2 font-single text-PURPLE2 h-full min-h-full max-sm:w-full max-sm:min-w-full`}
+			>
+				<p
+					className={` h-full min-h-full min-w-full flex justify-center items-center -rotate-[6deg] text-center font-single text-PURPLE2 text-[26px] max-sm:text-[18px]`}
+				>
+					{text.map((t, i) => (
+						<React.Fragment key={i}>
+							{t}
+							<br />
+						</React.Fragment>
+					))}
+				</p>
+			</div>
 		</div>
 	);
 };
