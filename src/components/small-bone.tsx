@@ -19,7 +19,7 @@ const Bone: React.FC<BoneProps> = ({ text, imageDog, colorBone }) => {
 			<img
 				src={imageDog}
 				alt='Dog head'
-				className={`absolute top-[29%] sm:top-[30%] max-h-[8vw] max-w-[10%] sm:max-h-[8vw] sm:max-w-[10%] h-full w-full`}
+				className={`absolute max-sm:left-[50%] top-[4%] max-h-[16vw] max-w-[20%] sm:top-[0%] sm:max-h-[11vw] sm:max-w-[14%] h-auto w-full`}
 			/>
 
 			<div
