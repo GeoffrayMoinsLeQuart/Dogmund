@@ -21,7 +21,7 @@ export const CoinOneRightDesktop: React.FC<CoinsProps> = ({ classname }) => {
 };
 
 export const CoinTwoLeftDesktop: React.FC<CoinsProps> = ({ classname }) => {
-	return <img src={twoLeft} alt='Two Left' className={`${classname} absolute max-h-[163px] h-[14vw] w-auto`} />;
+	return <img src={twoLeft} alt='Two Left' className={`${classname} absolute max-h-[130px] h-[14vw] w-auto`} />;
 };
 
 export const CoinTwoRightDesktop: React.FC<CoinsProps> = ({ classname }) => {
@@ -29,7 +29,7 @@ export const CoinTwoRightDesktop: React.FC<CoinsProps> = ({ classname }) => {
 };
 
 export const CoinThreeLeftDesktop: React.FC<CoinsProps> = ({ classname }) => {
-	return <img src={threeLeft} alt='Three Left' className={`${classname} absolute max-h-[150px] h-[14vw] w-auto`} />;
+	return <img src={threeLeft} alt='Three Left' className={`${classname} absolute max-h-[125px] h-[14vw] w-auto`} />;
 };
 
 export const CoinThreeRightDesktop: React.FC<CoinsProps> = ({ classname }) => {
