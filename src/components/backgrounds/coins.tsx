@@ -10,6 +10,7 @@ import pawTogetherLower from '../../assets/paw-together-lower2.gif';
 
 type CoinsProps = {
 	classname: string;
+	isVisible?: boolean;
 };
 
 // Global design 1
@@ -139,16 +140,18 @@ export const CoinThreeRightMobile: React.FC<CoinsProps> = ({ classname }) => {
 
 export const PawnGifDesktop: React.FC<CoinsProps> = ({ classname }) => {
 	return (
-		<img src={pawTogetherLower} alt='Paw Tiger with Diamond' className={`${classname} absolute bottom-[0] h-[60%]`} />
+		<img src={pawTogetherLower} alt='Paw Tiger with Diamond' className={`${classname} absolute bottom-[0] h-[55%]`} />
 	);
 };
 
-export const PawnGifNormal: React.FC<CoinsProps> = ({ classname }) => {
+export const PawnGifNormal: React.FC<CoinsProps> = ({ classname, isVisible }) => {
 	return (
 		<img
 			src={pawTogetherLower}
 			alt='Paw Tiger with Diamond'
-			className={`${classname} absolute bottom-[0] h-[30%]`}
+			className={`${classname} h-[22%] fixed bottom-0 right-2 mb-4 ml-4 transition-opacity duration-500 ease-in-out ${
+				isVisible ? 'opacity-100' : 'opacity-0'}
+			`}
 		/>
 	);
 };

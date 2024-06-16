@@ -8,7 +8,7 @@ interface ScrollToSellProps {
 const ScrollToSell: React.FC<ScrollToSellProps> = ({ isVisible }) => {
 	return (
 		<div
-			className={`flex items-center fixed bottom-0 left-0 mb-4 ml-4 transition-opacity duration-500 ease-in-out ${
+			className={`animate-bounce flex items-center fixed bottom-0 left-0 mb-4 ml-4 transition-opacity duration-500 ease-in-out ${
 				isVisible ? 'opacity-100' : 'opacity-0'
 			}`}
 		>

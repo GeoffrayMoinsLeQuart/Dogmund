@@ -11,6 +11,7 @@ import Dog4 from './assets/dog4.webp';
 import Dog5 from './assets/dog5.webp';
 import Dog6 from './assets/dog6.webp';
 import Dog7 from './assets/dog7.webp';
+import { PawnGifNormal } from './components/backgrounds/coins';
 
 const App: React.FC = () => {
 	const [isVisible, setIsVisible] = useState(false);
@@ -36,38 +37,28 @@ const App: React.FC = () => {
 			<div className='relative flex flex-col justify-center items-center w-full !h-full !min-h-[100vh]'>
 				<Page1 />
 				<Page2
-					comingFrom='home'
 					dog={Dog1}
 					message={['The journey to the end', 'is where the real gem awaits.', 'Are you up for the challenge?']}
 				/>
-				<Page3 comingFrom='home' />
+				<Page3 />
 				<Page4 />
 				<Page2
-					comingFrom='home'
 					dog={Dog3}
 					message={["Diamonds aren't formed without", 'pressure so give that scroll a', 'solid push!']}
 				/>
-				<Page3 comingFrom='home' />
+				<Page3 />
+				<Page2 dog={Dog4} message={['Keep your eyes on the prize,', 'and your finger on the scroll!']} />
+				<Page3 />
 				<Page2
-					comingFrom='home'
-					dog={Dog4}
-					message={['Keep your eyes on the prize,', 'and your finger on the scroll!']}
-				/>
-				<Page3 comingFrom='home' />
-				<Page2
-					comingFrom='home'
 					dog={Dog5}
 					message={['Tired already? Well, buckle up!', 'The best is still ahead,', 'just a few more scrolls to go!']}
 				/>
-				<Page3 comingFrom='home' />
-				<Page2
-					comingFrom='home'
-					dog={Dog6}
-					message={["Don't blink! You might miss", 'the hidden wonders waiting below!']}
-				/>
-				<Page3 comingFrom='home' />
-				<Page2 comingFrom='home' dog={Dog7} message={['Will you really let it go?']} />
+				<Page3 />
+				<Page2 dog={Dog6} message={["Don't blink! You might miss", 'the hidden wonders waiting below!']} />
+				<Page3 />
+				<Page2 dog={Dog7} message={['Will you really let it go?']} />
 				<ScrollToSell isVisible={isVisible} />
+				<PawnGifNormal isVisible={isVisible} classname={` right-[0%]`} />
 			</div>
 		</EthereumProvider>
 	);
