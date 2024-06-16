@@ -1,7 +1,7 @@
 // App.tsx
 import React from 'react';
 import BonePink from '../assets/bone-pink.webp';
-import DogVicieux from '../assets/dog-vicieux.webp';
+import Dog2 from '../assets/dog2.webp';
 import Button from '../components/connection/button';
 import { CoinTwoLeft, CoinTwoRight, CoinFourLeft } from '../components/backgrounds/coins';
 
@@ -15,7 +15,7 @@ const Page4: React.FC = () => {
 			<div className='relative w-full  max-sm:w-[150%] max-sm:-left-[25%]  m-auto top-[29%] sm:top-[30%] '>
 				<img src={BonePink} alt='Dog Bone' className={`relative w-full h-auto`} />
 				<img
-					src={DogVicieux}
+					src={Dog2}
 					alt='Dog head'
 					className={`absolute max-sm:top-[18%] top-[16%] left-[31%] max-h-[12vw] max-sm:max-h-[13vw] max-w-[14%] max-sm:max-w-[12%] h-auto w-full -z-[1]`}
 				/>

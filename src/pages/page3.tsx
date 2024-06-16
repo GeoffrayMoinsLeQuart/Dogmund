@@ -8,7 +8,6 @@ import {
 	PawnGifNormal,
 	CoinFourLeft
 } from '../components/backgrounds/coins';
-import ScrollToSell from '../components/scroll-to-sell';
 
 type Page3Props = {
 	comingFrom: string;
@@ -28,7 +27,6 @@ const Page3: React.FC<Page3Props> = ({ comingFrom }) => {
 				<CoinFourLeft classname={`max-sm:top-[0] max-sm:left-[12%] sm:hidden`} />
 				<CoinFourLeft classname={`max-sm:top-[17%] max-sm:left-[30%] sm:hidden rotate-90`} />
 				<PawnGifNormal classname={`${visible2} right-[0%]`} />
-				<ScrollToSell />
 			</div>
 		</div>
 	);

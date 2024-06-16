@@ -1,17 +1,13 @@
 
 
-  Ajouter les coin manquant (deux set ont été fournis et le designer a demandé à les afficher aléatoirement)
   Faire les os blanc et roses
   Conections wallet
   Titre "Want to sell your airdrop ?"
   connection db
 
 
-  Scroll to sell fixe en bas a gauche qui apparait des le premier Scroll
   Ajouter animation dessus (en haut en bas / gros petit)
 
-
-Centre gros os 
 
 Grosse pate reduire taille et passer a la position de l'autre lors du Scroll
 
@@ -23,3 +19,5 @@ mobile
 
 
 popup centre mobile
+
+Il manque une piece sur page3

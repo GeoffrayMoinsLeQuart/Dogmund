@@ -16,7 +16,6 @@ type BackgroundProps = {
 
 const Background1: React.FC<BackgroundProps> = ({ comingFrom }) => {
 	const visible: string = comingFrom === 'home' ? 'max-sm:hidden' : 'sm:hidden';
-	const visible2: string | boolean = comingFrom !== 'home' && 'hidden';
 
 	return (
 		<div className='absolute w-full h-full -z-[1]'>
@@ -26,7 +25,7 @@ const Background1: React.FC<BackgroundProps> = ({ comingFrom }) => {
 			<CoinOneRightDesktop classname={`${visible} top-[15%] right-[12%]`} />
 			<CoinTwoRightDesktop classname={`${visible} top-[52%] right-[7%]`} />
 			<CoinThreeRightDesktop classname={`${visible} top-[82%] right-[12%]`} />
-			<PawnGifDesktop classname={`${visible2} left-[50%] transform -translate-x-1/2`} />
+			<PawnGifDesktop classname={`left-[50%] transform -translate-x-1/2`} />
 		</div>
 	);
 };

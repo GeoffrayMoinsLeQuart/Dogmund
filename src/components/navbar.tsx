@@ -2,40 +2,32 @@ import React, { useEffect, useState } from 'react';
 import Button from './connection/button';
 import Logo from '../assets/logo.png';
 import Text from './connection/text';
+import { useEthereum } from '../context/ethereum-context';
 
 interface INavbar {
-  onOpenModal: (isOpen: boolean) => void;
+  onOpenModal: () => void; // Adjust the type to match the expected signature
 }
 
 const Navbar: React.FC<INavbar> = ({ onOpenModal }) => {
-  const [isConnected, setIsConnected] = useState(false);
+  const { address, disconnect } = useEthereum();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    if (!isConnected) {
-      setIsMenuOpen(false);
-    }
-  }, [isConnected]);
+    console.log('Address changed:', address);
+  }, [address]);
 
   return (
-    <nav className='flex items-center justify-between p-4 max-w-[1140px] w-full pt-[32px]'>
+    <nav className='flex items-center justify-between p-4 max-w-[1140px] w-[100%] pt-[52px]'>
       <div className='flex items-center'>
-        <img src={Logo} alt='Logo' className='h-12 w-12' />
+        <img src={Logo} alt='Logo' className={`h-[48px] w-[48px]`} />
       </div>
       <div>
-        {isConnected ? (
-          <Text onClick={() => setIsConnected(!isConnected)} isMenuOpen={() => setIsMenuOpen(!isMenuOpen)}>
-            0x8e...036Fe
+        {address ? (
+          <Text onClick={disconnect} isMenuOpen={() => setIsMenuOpen(!isMenuOpen)}>
+            {address.slice(0, 6)}...{address.slice(-4)}
           </Text>
         ) : (
-          <Button
-            onClick={() => {
-              setIsConnected(!isConnected);
-              onOpenModal(true);
-            }}
-          >
-            Connect
-          </Button>
+          <Button onClick={onOpenModal}>Connect</Button>
         )}
       </div>
     </nav>

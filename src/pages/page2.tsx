@@ -9,15 +9,14 @@ import {
 	PawnGifNormal
 } from '../components/backgrounds/coins';
 import Bone from '../components/small-bone';
-import ScrollToSell from '../components/scroll-to-sell';
-import DogVicieux from '../assets/dog-vicieux.webp';
 
 type Page2Props = {
 	comingFrom: string;
 	message: string[];
+	dog: string;
 };
 
-const Page2: React.FC<Page2Props> = ({ comingFrom, message }) => {
+const Page2: React.FC<Page2Props> = ({ dog, comingFrom, message }) => {
 	const visible2: string | boolean = comingFrom !== 'home' && 'hidden';
 
 	return (
@@ -29,9 +28,8 @@ const Page2: React.FC<Page2Props> = ({ comingFrom, message }) => {
 				<CoinTwoRight classname={`max-sm:top-[75%] max-sm:left-[12%] max-sm:-rotate-[30deg] top-[85%] left-[38%]`} />
 				<CoinFourLeft classname={`max-sm:top-[0] max-sm:left-[12%] sm:hidden`} />
 				<CoinFourLeft classname={`max-sm:top-[17%] max-sm:left-[30%] sm:hidden rotate-90`} />
-				<Bone colorBone='white' imageDog={DogVicieux} text={message} />
+				<Bone colorBone='white' imageDog={dog} text={message} />
 				<PawnGifNormal classname={`${visible2} right-[0%]`} />
-				<ScrollToSell />
 			</div>
 		</div>
 	);
