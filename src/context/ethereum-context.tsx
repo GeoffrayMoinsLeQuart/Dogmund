@@ -1,9 +1,10 @@
 import React, { createContext, useState, useContext, ReactNode } from 'react';
+import { disconnectWallet } from '../utils/connect-wallet';
 
 interface EthereumContextProps {
   address: string | null;
   setAddress: (address: string | null) => void;
-  disconnect: () => void;
+  disconnect: (walletType: string) => void;
 }
 
 const EthereumContext = createContext<EthereumContextProps | undefined>(undefined);
@@ -11,9 +12,10 @@ const EthereumContext = createContext<EthereumContextProps | undefined>(undefine
 export const EthereumProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [address, setAddress] = useState<string | null>(null);
 
-  const disconnect = () => {
-    console.log('Disconnecting wallet');
+  const disconnect = async (walletType: string) => {
+    await disconnectWallet(walletType);
     setAddress(null);
+    console.log(`${walletType} disconnected`);
   };
 
   return (
